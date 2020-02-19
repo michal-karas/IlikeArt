@@ -1,6 +1,5 @@
 .partners {
     padding: 75px 0;
-    background-color: red;
 
     .container {
         text-align: center;
@@ -24,6 +23,14 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                @media (max-width: 900px) {
+                    width: calc(100% / 3);
+                }
+
+                @media (max-width: 600px) {
+                    width: 50%;
+                }
 
                 img {
                     display: block;
